@@ -1,7 +1,5 @@
-#!/bin/bash
-
-set -e
-
+#!/usr/bin/env bash
+docker images
 docker rm -f $(docker ps -a -q)
 
 docker rmi $(docker images -q)
